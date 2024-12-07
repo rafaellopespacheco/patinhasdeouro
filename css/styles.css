@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Plumpfull';
+  src: url('../assets/fonts/Plumpfull.ttf') format('truetype');
+}
+
+:root {
+  /* 🌿 Paleta Principal */
+  --cor1: #A8DADC; /* Fundo, destaques leves */
+  --cor2: #457B9D; /* Seções de destaque */
+  --cor3: #f5f5f5; /* Fundo neutro, áreas de texto */
+
+  /* 🎉 Cores de Botões e Hovers */
+  --cor4: #1D3557; /* Botões de ação, hovers */
+  --cor5: #2A9D8F; /* Alternativa para botões e ações de destaque */
+
+  /* 🖌️ Cor Complementar (Texto e Detalhes) */
+  --cor6: #A4A4A4; /* Textos secundários, legendas */
+
+  /* Fontes */
+  --font1: Arial, Helvetica, sans-serif;
+  --font2: 'Plumpfull', sans-serif;
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+   font-family: var(--font1);
+}
+
+body {
+   max-width: 1000px;
+   margin: auto;
+   padding: 20px;
+}
+
+.botao {
+  background-color: var(--cor4);
+  color: var(--cor3);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.botao:hover {
+  background-color: var(--cor5);
+  transform: scale(1.05);
+}
+
+.botao2 {
+  background-color: transparent;
+  color: var(--cor4);
+  border: 2px solid var(--cor4);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.botao2:hover {
+  background-color: var(--cor4);
+  transform: scale(1.05);
+  color: var(--cor3);
+}
+
+
+header {
+  background-color: white;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--cor4);
+  margin-bottom: 40px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header nav img {
+  height: 50px;
+  width: auto;
+}
+
+header .pages a {
+  color: var(--cor4);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+header .pages a:hover {
+  color: var(--cor5);
+}
+
+.principal {
+   display: flex;
+   align-items: center;
+   justify-items: center;
+   margin-bottom: 80px;
+}
+
+.principal h1 {
+   font-family: var(--font2);
+   font-weight: lighter;
+   color: var(--cor4);
+   font-size: 3em;
+   margin-bottom: 10px;
+   width: 250px;
+}
+
+.principal h2 {
+   font-size: 2em;
+   margin-bottom: 20px;
+}
+
+.principal p {
+   font-size: 1em;
+   margin-bottom: 20px;
+}
+
+.principal img {
+   max-width: 500px;
+   border-radius: 10px;
+   margin-left: 40px;
+}
+
+.servicos {
+   margin-bottom: 80px;
+}
+
+.servicos2 {
+   display: flex;
+}
+
+.servicos h2 {
+   text-align: center;
+   width: 100%;
+   margin-bottom: 30px;
+   font-size: 2em;
+}
+
+.servicos .botao {
+   margin: auto;
+   display: block;
+   max-width: 230px;
+   text-align: center;
+   margin-top: 30px;
+}
+
+.servicos aside {
+   justify-content: space-between;
+   width: 50%;
+   background-color: var(--cor3);
+   color: black;
+   padding: 20px;
+   border-radius: 10px;
+   margin: 10px;
+   box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.151);
+   padding: 20px;
+   transition: 0.5s;
+}
+
+.servicos aside h3 {
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+.servicos aside:hover {
+   box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.391);
+   padding: 20px 30px;
+   cursor: default;
+}
+
+.saude {
+   display: flex;
+   margin-bottom: 80px;
+   align-items: center;
+}
+
+.saude img {
+   max-width: 500px;
+   border-radius: 10px;
+}
+
+.saude h2 {
+   margin-bottom: 20px;
+   font-size: 2.1em;
+}
+
+.saude p {
+   margin-bottom: 30px;
+   font-size: 1.1em;
+}
+
+.saude .conteudo {
+   padding-left: 30px;
+}
+
+.pacote {
+   background-color: var(--cor3);
+   padding: 40px;
+   box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.151);
+   border-radius: 10px;
+   margin-bottom: 80px;
+}
+
+.pacote h2, h3 {
+   text-align: center;
+}
+
+.pacote p {
+   margin-top: 10px;
+   font-size: 1.1em;
+   margin-bottom: 30px;
+}
+
+.pacote .botao2 {
+   display: block;
+   margin: auto;
+   text-align: center;
+   max-width: 100px;
+}
+
+.depoimento h2 {
+   text-align: center;
+   font-size: 2.5em;
+   margin-bottom: 40px;
+}
+
+.depoimento aside {
+   background-color: var(--cor3);
+   padding: 30px;
+   border-radius: 10px;
+   margin: 10px;
+   justify-items: center;
+   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.191);
+   margin-bottom: 40px;
+}
+
+.depoimento .cards {
+   display: flex;
+}
+
+.depoimento h3 {
+   text-align: left;
+}
+
+.depoimento .star img {
+   width: 20px;
+}
+
+.depoimento .botao2 {
+   display: block;
+   width: 190px;
+   margin: auto;
+   text-align: center;
+   margin-bottom: 80px;
+}
