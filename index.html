@@ -11,17 +11,27 @@
 <body>
    <header>
       <nav>
-         <img src="assets/images/logo.png" alt="Pata dourada, logo do Patinhas de Ouro">
-         <div class="pages">
-            <a href="#">Home</a>
-            <a href="#">Serviços</a>
-            <a href="#">Hospedagem</a>
-            <a href="#">Planos</a>
-            <a href="#">Quem somos</a>
+         <a href="/index.html"><img src="assets/images/logo.png" alt="Pata dourada, logo do Patinhas de Ouro"></a>
+         <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
          </div>
-         <div class="action">
-            <a href="https://w.app/patinhasdeouro" class="botao" target="_blank">AGENDAR AGORA</a>
-         </div>
+         <!-- <div class="pages">
+            <a href="index.html">Home</a>
+            <a href="pages/servicos.html">Serviços</a>
+            <a href="pages/hospedagem.html">Hospedagem</a>
+            <a href="pages/planos.html">Planos</a>
+            <a href="pages/quemsomos.html">Quem somos</a>
+         </div> -->
+         <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/servicos.html">Serviços</a></li>
+            <li><a href="pages/hospedagem.html">Hospedagem</a></li>
+            <li><a href="pages/planos.html">Planos</a></li>
+            <li><a href="pages/quemsomos.html">Quem somos</a></li>
+            <li><a href="https://w.app/patinhasdeouro" class="botao" target="_blank">AGENDAR AGORA</a></li>
+         </ul>
       </nav>
    </header>
    <main>
@@ -131,7 +141,7 @@
          <a href="https://g.page/r/CUCQTlrcSnKYEAE/review" target="_blank" class="botao2">Deixe o seu depoimento</a>
       </section>
 
-      <section> <!-- Dúvidas Frequentes -->
+      <section class="faq"> <!-- Dúvidas Frequentes -->
          <h2>Dúvidas Frequentes</h2>
 
          <aside>
@@ -154,35 +164,42 @@
                </p>
             </details>
          
+            <p id="p1">Restou alguma dúvida que não foi respondida aqui? <a href="https://w.app/patinhasdeouro" class="link" target="_blank">Entre em contato conosco</a></p>
          </aside>
 
       </section>
    
-      <section> <!-- Chamada Final (Call-to-Action) -->
-         <h2>Seu pet merece o melhor cuidado!</h2>
-         <p>Agende o banho e tosa do seu pet agora e ofereça a ele saúde, conforto e bem-estar!</p>
-         <a href="https://w.app/patinhasdeouro" class="botao" target="_blank">AGENDAR AGORA</a>
+      <section class="chamada"> <!-- Chamada Final (Call-to-Action) -->
+         <div class="conteudo">
+            <h2>Seu pet merece o melhor cuidado!</h2>
+            <p>Agende o banho e tosa do seu pet agora e ofereça a ele saúde, conforto e bem-estar!</p>
+            <a href="https://w.app/patinhasdeouro" class="botao" target="_blank">AGENDAR AGORA</a>
+         </div>
+         <div class="image">
+            <img src="assets/images/petfeliz.jpg" alt="">
+         </div>
       </section>
+
    </main>
 
    <footer>
       <nav>
-         <a href="#">Home</a>
-         <a href="#">Serviços</a>
-         <a href="#">Hospedagem</a>
-         <a href="#">Planos</a>
-         <a href="#">Quem somos?</a>
+         <a href="index.html">Home</a>
+         <a href="pages/servicos.html">Serviços</a>
+         <a href="pages/hospedagem.html">Hospedagem</a>
+         <a href="pages/planos.html">Planos</a>
+         <a href="pages/quemsomos.html">Quem somos</a>
       </nav>
       <p>Informações de Contato:</p>
       <p>📞 Telefone: (22) 98844-2251</p>
-      <p>📍 Endereço: Rua Coronel Andrade Neves, 45 - A, Parque Hotel, Araruama - RJ</p>
-      <p>📧 E-mail: contato@patinhasdeouro.com</p>
+      <p>📍 Endereço: <a href="https://g.co/kgs/YYNBWaw" target="_blank">Rua Coronel Andrade Neves, 45 - A, Parque Hotel, Araruama - RJ</a></p>
       <div class="social-icons">
-         <a href="#"><img src="assets/images/instagram-icon.png" alt="Instagram"></a>
-         <a href="#"><img src="assets/images/facebook-icon.png" alt="Facebook"></a>
-         <a href="#"><img src="assets/images/whatsapp-icon.png" alt="WhatsApp"></a>
+         <a href="#"><img src="assets/images/instagram.png" alt="Instagram"></a>
+         <a href="#"><img src="assets/images/facebook.png" alt="Facebook"></a>
+         <a href="#"><img src="assets/images/whatsapp.png" alt="WhatsApp"></a>
       </div>
       <p>© 2024 Patinhas de Ouro. Todos os direitos reservados.</p>
    </footer>
+   <script src="js/mobile-navbar.js"></script>
 </body>
 </html>
