@@ -29,10 +29,6 @@
    font-family: var(--font1);
 }
 
-body, html {
-      overflow-x: hidden;
-}
-
 main {
    max-width: 1000px;
    margin: auto;
@@ -581,6 +577,10 @@ footer p:last-of-type {
     justify-content: center;
     gap: 10px;
   }
+
+  body {
+      overflow-x: hidden;
+   }
 }
 
 .nav-list.active {
