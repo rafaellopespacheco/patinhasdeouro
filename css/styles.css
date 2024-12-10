@@ -86,23 +86,23 @@ header nav img {
   height: 50px;
 }
 
-header .nav-list {
+.nav-list {
    list-style: none;
    display: flex;
 }
 
-header .nav-list li {
+.nav-list li {
    margin-left: 32px;
 }
 
-header .nav-list a {
+.nav-list a {
    color: black;
    text-decoration: none;
    font-weight: bolder;
    transition: 0.3s;
 }
 
-header .nav-list a:hover {
+.nav-list a:hover {
    color: var(--cor2)
 }
 
@@ -110,12 +110,12 @@ header .nav-list a:hover {
    color: white;
 }
 
-header .mobile-menu {
+.mobile-menu {
    cursor: pointer;
    display: none;
 }
 
-header .mobile-menu div {
+.mobile-menu div {
    width: 32px;
    height: 2px;
    background-color: black;
@@ -450,6 +450,9 @@ footer p:last-of-type {
 /* Responsividade */
 @media (max-width: 850px) {
 
+   main {
+      padding: 20px;
+   }
    .nav-list {
       position: absolute;
       top: 12.5vh;
@@ -487,14 +490,13 @@ footer p:last-of-type {
       text-decoration: none;
    }
 
-   header .mobile-menu {
+   .mobile-menu {
       display: block;
    }
 
-  /* header {
-    flex-direction: column;
-    align-items: center;
-  } */
+   header {
+      margin-bottom: 10px;
+   }
 
   .pages {
     display: flex;
@@ -507,20 +509,23 @@ footer p:last-of-type {
   }
 
   .principal {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
   }
 
   .principal h1 {
-   width: 100%;
+      width: 300px;
+      margin: auto;
   }
+
+
+
   .principal img {
-   margin-top: 40px;
-    max-width: 90%;
-    height: auto;
-    margin-bottom: 20px;
-  }
+      margin: 40px 0px 20px 0px;
+      max-width: 100%;
+      height: auto;
+   }
 
   .servicos2 {
     flex-direction: column;
@@ -528,38 +533,60 @@ footer p:last-of-type {
   }
 
   .servicos aside {
-    margin: 15px 0;
     text-align: center;
+    width: 89%;
   }
 
   .saude {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
   }
 
   .saude img {
-    max-width: 90%;
-    height: auto;
-    margin-bottom: 15px;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
   }
+   .saude .conteudo {
+      padding: 10px;
+      text-align: center;
+   }
 
   .depoimento .cards {
     flex-direction: column;
     align-items: center;
   }
 
+   .depoimento h2 {
+      margin-top: 80px;
+   }
+
   .depoimento aside {
-    width: 90%;
+    width: 84%;
     margin-bottom: 15px;
   }
 
+  .pacote {
+   padding: 20px;
+   
+  }
   .faq {
     padding: 15px;
   }
 
   .faq summary {
     font-size: 1rem;
+  }
+
+   .chamada {
+      flex-direction: column;
+      gap: 30px;
+      padding-top: 0px 10px 0px 10px;
+   }
+
+  .chamada h2 {
+   padding-top: 40px;
   }
 
   footer {
@@ -571,6 +598,7 @@ footer p:last-of-type {
 
   footer nav {
     margin-bottom: 15px;
+    flex-direction: column;
   }
 
   footer .social-icons {
