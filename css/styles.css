@@ -333,20 +333,14 @@ header nav img {
    border-bottom: 1px solid rgba(0, 0, 0, 0.209);
 }
 
-.faq #p1 {
+.faq .botao {
+   margin: auto;
+   display: block;
+   width: 190px;
    text-align: center;
-   margin-top: 40px;
+   margin-top: 30px;
 }
 
-.faq .link {
-   color: black;
-   text-decoration: none;
-   font-weight: bolder;
-}
-
-.faq .link:hover {
-   text-decoration: underline;
-}
 
 .chamada {
    display: flex;
