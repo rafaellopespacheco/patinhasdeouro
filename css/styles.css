@@ -366,6 +366,65 @@ header nav img {
    width: 100%;
 }
 
+/* Estilo para a seção .historia */
+.historia {
+   background-color: #f9f9f9; /* Fundo suave */
+   padding: 50px 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   margin-bottom: 40px;
+}
+
+.historia h2 {
+   text-align: center;
+   color: #333;
+   font-size: 2.5em;
+   margin-bottom: 20px;
+}
+
+.historia p {
+   color: #555;
+   line-height: 1.8;
+   font-size: 1.1em;
+   margin-bottom: 20px;
+}
+
+.historia h3 {
+   color: #333;
+   margin-top: 30px;
+   font-size: 1.8em;
+}
+
+/* Estilo para os asides */
+.historia aside {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 30px;
+   gap: 20px;
+}
+
+.historia aside img {
+   flex: 1;
+   max-width: 460px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.historia aside p {
+   flex: 2;
+   padding: 10px;
+   text-align: justify;
+}
+
+/* Estilo para imagens na .historia */
+.historia img {
+   width: 100%;
+   height: auto;
+   border-radius: 10px;
+}
+
 footer {
    margin-top: 70px;
    background-color: #f5f5f5; /* Fundo suave que remete à limpeza */
@@ -582,6 +641,13 @@ footer p:last-of-type {
   .chamada h2 {
    padding-top: 40px;
   }
+
+   .historia aside {
+      flex-direction: column-reverse;
+   }
+   .historia aside img {
+      max-width: 100%;
+   }
 
   footer {
     flex-wrap: wrap;
