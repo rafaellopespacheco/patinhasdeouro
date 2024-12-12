@@ -537,7 +537,7 @@ footer p:last-of-type {
       text-decoration: underline;
    }
 
-   .nav-list .botao, .nav-list .botao:hover {
+   .nav-list, .nav-list {
       color: white;
       padding: 10px;
       text-decoration: none;
