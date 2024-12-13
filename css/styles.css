@@ -65,6 +65,39 @@ main {
   color: var(--cor3);
 }
 
+.container-not {
+   bottom: 0;
+   position: fixed;
+   width: 60%;
+   padding: 15px;
+   font-size: 1.3em;
+   background-color: rgb(255, 96, 96);
+   color: black;
+   font-weight: bolder;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   justify-items: center;
+   margin-bottom: 10px;
+   border-radius: 10px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.container-not button {
+   border: none;
+   background-color: transparent;
+   color: rgba(0, 0, 0, 0.449);
+   font-size: 1.2em;
+   margin-left: 15px;
+}
+.container-not button:hover {
+   color: black;
+   cursor: pointer;
+}
+
+.container-not img {
+   margin-right: 15px;
+}
 
 header {
   background-color: white;
@@ -502,7 +535,9 @@ footer p:last-of-type {
 
 /* Responsividade */
 @media (max-width: 850px) {
-
+   .container-not {
+      width: 90%;
+   }
    main {
       padding: 20px;
    }
