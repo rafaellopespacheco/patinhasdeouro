@@ -71,7 +71,7 @@ main {
    width: 60%;
    padding: 15px;
    font-size: 1.3em;
-   background-color: rgb(255, 96, 96);
+   background-color: rgb(255, 202, 96);
    color: black;
    font-weight: bolder;
    display: flex;
@@ -82,6 +82,8 @@ main {
    border-radius: 10px;
    left: 50%;
    transform: translateX(-50%);
+   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.46);
+   z-index: 9999; 
 }
 .container-not button {
    border: none;
@@ -89,10 +91,12 @@ main {
    color: rgba(0, 0, 0, 0.449);
    font-size: 1.2em;
    margin-left: 15px;
+   transition: 0.3s;
 }
 .container-not button:hover {
    color: black;
    cursor: pointer;
+   transform: scale(1.1);
 }
 
 .container-not img {
@@ -100,10 +104,10 @@ main {
 }
 
 header {
-  background-color: white;
-  padding: 20px 0;
-  border-bottom: 1px solid var(--cor4);
-  margin-bottom: 40px;
+   background-color: white;
+   padding: 20px 0;
+   border-bottom: 1px solid var(--cor4);
+   margin-bottom: 40px;
 }
 
 header nav {
@@ -195,6 +199,8 @@ header nav img {
 
 .servicos2 {
    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 .servicos h2 {
@@ -214,7 +220,6 @@ header nav img {
 
 .servicos aside {
    justify-content: space-between;
-   width: 50%;
    background-color: var(--cor3);
    color: black;
    padding: 20px;
@@ -223,6 +228,7 @@ header nav img {
    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.151);
    padding: 20px;
    transition: 0.5s;
+   max-width: 300px;
 }
 
 .servicos aside h3 {
@@ -232,7 +238,7 @@ header nav img {
 
 .servicos aside:hover {
    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.391);
-   padding: 20px 30px;
+   transform: scale(1.005);
    cursor: default;
 }
 
@@ -271,7 +277,7 @@ header nav img {
 }
 
 .pacote:hover {
-   padding: 45px;
+   transform: scale(1.005);
 }
 
 .pacote h2, h3 {
@@ -310,7 +316,7 @@ header nav img {
 }
 
 .depoimento aside:hover {
-   padding: 35px;
+   transform: scale(1.008);
 }
 
 .depoimento .cards {
