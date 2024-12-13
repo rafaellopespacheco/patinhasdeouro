@@ -6,35 +6,37 @@ body {
    overflow-x: hidden;
 }
 
+.carrossel-container {
+   max-width: 500px;
+   max-height: 500px;
+   align-items: center;
+}
+
 .conteudo-carrossel {
    display: flex;
-   justify-content: center;
    align-items: center;
-   justify-items: center;
-   margin: 0;
-   padding: 0;
 }
 
 .textos-carrossel {
+   padding-left: 30px;
    max-width: 400px;
+   margin-bottom: 80px;
 }
 
 .textos-carrossel p {
-   text-indent: 50px;
-   font-size: 1.2em;
-   margin-bottom: 50px;
+   margin-bottom: 30px;
+   font-size: 1.1em;
 }
 
-span h2 {
-   margin-bottom: 30px;
-   text-align: center;
+.conteudo-carrossel h2 {
+   margin-bottom: 20px;
    font-size: 2.1em;
 }
 
 .carrossel-container {
    display: block;
    margin: 0 auto 80px auto;
-   width: 45%;
+   max-width: 500px;
    overflow: hidden;
    border-radius: 10px;
    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -75,7 +77,8 @@ span h2 {
 
 @media (max-width: 850px) {
    .servicos aside {
-      max-width: 100%;
+      text-align: center;
+      width: 100%;
    }
    .carrossel-container {
       width: 100%;
