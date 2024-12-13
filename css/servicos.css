@@ -1,0 +1,89 @@
+.servicos aside {
+   max-width: 200px;
+}
+
+body {
+   overflow-x: hidden;
+}
+
+.conteudo-carrossel {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   justify-items: center;
+   margin: 0;
+   padding: 0;
+}
+
+.textos-carrossel {
+   max-width: 400px;
+}
+
+.textos-carrossel p {
+   text-indent: 50px;
+   font-size: 1.2em;
+   margin-bottom: 50px;
+}
+
+span h2 {
+   margin-bottom: 30px;
+   text-align: center;
+   font-size: 2.1em;
+}
+
+.carrossel-container {
+   display: block;
+   margin: 0 auto 80px auto;
+   width: 45%;
+   overflow: hidden;
+   border-radius: 10px;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+   position: relative;
+}
+
+.carrossel {
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+}
+
+.carrossel img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.dots-container {
+   position: absolute;
+   bottom: 10px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+}
+
+.dot {
+   width: 15px;
+   height: 15px;
+   background-color: #bbb;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.dot.active {
+   background-color: #333;
+}
+
+@media (max-width: 850px) {
+   .servicos aside {
+      max-width: 100%;
+   }
+   .carrossel-container {
+      width: 100%;
+   }
+   .conteudo-carrossel {
+      flex-direction: column;
+   }
+   .textos-carrossel {
+      max-width: 100%;
+   }
+}

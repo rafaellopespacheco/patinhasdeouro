@@ -1,0 +1,3 @@
+Colocar textos alternativos nas páginas
+Organizar CSS e HTML, com comentários, ordens corretas etc
+Como organizar bem o seu css
