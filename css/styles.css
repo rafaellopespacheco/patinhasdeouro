@@ -1,11 +1,12 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Configuração para evitar problemas com acentuação! */
 
 @font-face {
   font-family: 'Plumpfull';
   src: url('../assets/fonts/Plumpfull.ttf') format('truetype');
 }
 
-:root {
+/* Variáveis */
+:root { 
   /* 🌿 Paleta Principal */
   --cor1: #A8DADC; /* Fundo, destaques leves */
   --cor2: #457B9D; /* Seções de destaque */
@@ -23,12 +24,14 @@
   --font2: 'Plumpfull', sans-serif;
 }
 
-* {
+/* Reset Geral */
+* { 
    margin: 0px;
    padding: 0px;
    font-family: var(--font1);
 }
 
+/* Configuração Geral */
 main {
    max-width: 1000px;
    margin: auto;
@@ -44,6 +47,7 @@ main {
   font-weight: bold;
   transition: background-color 0.3s, transform 0.2s;
 }
+
 .botao:hover {
   background-color: var(--cor5);
   transform: scale(1.05);
@@ -59,12 +63,14 @@ main {
   font-weight: bold;
   transition: background-color 0.3s, transform 0.2s;
 }
+
 .botao2:hover {
   background-color: var(--cor4);
   transform: scale(1.05);
   color: var(--cor3);
 }
 
+/* NOTIFICAÇÃO */
 .container-not {
    bottom: 0;
    position: fixed;
@@ -85,6 +91,7 @@ main {
    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.46);
    z-index: 9999; 
 }
+
 .container-not button {
    border: none;
    background-color: transparent;
@@ -93,6 +100,7 @@ main {
    margin-left: 15px;
    transition: 0.3s;
 }
+
 .container-not button:hover {
    color: black;
    cursor: pointer;
@@ -103,6 +111,7 @@ main {
    margin-right: 15px;
 }
 
+/* CABEÇALHO */
 header {
    background-color: white;
    padding: 20px 0;
@@ -123,6 +132,7 @@ header nav img {
   height: 50px;
 }
 
+/* Barra de Navegação */
 .nav-list {
    list-style: none;
    display: flex;
@@ -147,6 +157,7 @@ header nav img {
    color: white;
 }
 
+/* MENU HAMBURGUER */
 .mobile-menu {
    cursor: pointer;
    display: none;
@@ -161,6 +172,7 @@ header nav img {
    transition: 0.3s;
 }
 
+/* CONTEÚDO PRINCIPAL */
 .principal {
    display: flex;
    align-items: center;
@@ -193,6 +205,7 @@ header nav img {
    margin-left: 40px;
 }
 
+/* SEÇÃO DE SERVIÇOS */
 .servicos {
    margin-bottom: 80px;
 }
@@ -242,6 +255,7 @@ header nav img {
    cursor: default;
 }
 
+/* SEÇÃO DE SAÚDE */
 .saude {
    display: flex;
    margin-bottom: 80px;
@@ -267,6 +281,7 @@ header nav img {
    padding-left: 30px;
 }
 
+/* SEÇÃO PACOTE */
 .pacote {
    background-color: var(--cor3);
    padding: 40px;
@@ -297,6 +312,7 @@ header nav img {
    max-width: 100px;
 }
 
+/* SEÇÃO AVALIAÇÃO */
 .depoimento h2 {
    text-align: center;
    font-size: 2.5em;
@@ -339,6 +355,7 @@ header nav img {
    margin-bottom: 80px;
 }
 
+/* PERGUNTAS FREQUENTES */
 .faq {
    background-color: var(--cor3);
    border-radius: 10px;
@@ -380,7 +397,7 @@ header nav img {
    margin-top: 30px;
 }
 
-
+/* CALL TO ACTION */
 .chamada {
    display: flex;
    align-items: center;
@@ -405,65 +422,7 @@ header nav img {
    width: 100%;
 }
 
-/* Estilo para a seção .historia */
-.historia {
-   background-color: #f9f9f9; /* Fundo suave */
-   padding: 50px 20px;
-   border-radius: 10px;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   margin-bottom: 40px;
-}
-
-.historia h2 {
-   text-align: center;
-   color: #333;
-   font-size: 2.5em;
-   margin-bottom: 20px;
-}
-
-.historia p {
-   color: #555;
-   line-height: 1.8;
-   font-size: 1.1em;
-   margin-bottom: 20px;
-}
-
-.historia h3 {
-   color: #333;
-   margin-top: 30px;
-   font-size: 1.8em;
-}
-
-/* Estilo para os asides */
-.historia aside {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: space-between;
-   margin-bottom: 30px;
-   gap: 20px;
-}
-
-.historia aside img {
-   flex: 1;
-   max-width: 460px;
-   border-radius: 10px;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.historia aside p {
-   flex: 2;
-   padding: 10px;
-   text-align: justify;
-}
-
-/* Estilo para imagens na .historia */
-.historia img {
-   width: 100%;
-   height: auto;
-   border-radius: 10px;
-}
-
+/* RODAPÉ */
 footer {
    margin-top: 70px;
    background-color: #f5f5f5; /* Fundo suave que remete à limpeza */
@@ -541,12 +500,26 @@ footer p:last-of-type {
 
 /* Responsividade */
 @media (max-width: 850px) {
+   /* NOTIFICAÇÃO */
    .container-not {
       width: 90%;
    }
+
+   /* PRINCIPAL */
    main {
       padding: 20px;
    }
+
+   body {
+      overflow-x: hidden;
+   }
+
+   /* CABEÇALHO */
+   header {
+      margin-bottom: 10px;
+   }
+
+   /* NAGEGAÇÃO */
    .nav-list {
       position: absolute;
       top: 12.5vh;
@@ -562,10 +535,12 @@ footer p:last-of-type {
       transform: translateX(100%);
       transition: transform 0.3s ease-in;
    }
+
    .nav-list li {
       margin-left: 0;
       opacity: 0;
    }
+
    .nav-list li a {
       color: black;
       text-decoration: none;
@@ -573,6 +548,7 @@ footer p:last-of-type {
       padding: 40px ;
    
    }
+
    .nav-list li a:hover {
       color: var(--cor4);
       text-decoration: underline;
@@ -584,24 +560,12 @@ footer p:last-of-type {
       text-decoration: none;
    }
 
+   /* MENU HAMBURGUER */
    .mobile-menu {
       display: block;
    }
 
-   header {
-      margin-bottom: 10px;
-   }
-
-  .pages {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .pages a {
-    margin: 5px;
-  }
-
+   /* SEÇÃO PRINCIPAL */
   .principal {
       flex-direction: column;
       align-items: center;
@@ -613,105 +577,102 @@ footer p:last-of-type {
       margin: auto;
   }
 
-
-
   .principal img {
       margin: 40px 0px 20px 0px;
       max-width: 100%;
       height: auto;
    }
 
-  .servicos2 {
-    flex-direction: column;
-    align-items: center;
-  }
+   /* SEÇÃO SERVIÇOS */
+   .servicos2 {
+      flex-direction: column;
+      align-items: center;
+   }
 
   .servicos aside {
     text-align: center;
     width: 89%;
   }
 
-  .saude {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-  }
+  /* SEÇÃO SAÚDE */
+   .saude {
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+   }
 
-  .saude img {
+   .saude img {
       max-width: 100%;
       height: auto;
       margin-bottom: 15px;
   }
+
    .saude .conteudo {
       padding: 10px;
       text-align: center;
    }
 
-  .depoimento .cards {
-    flex-direction: column;
-    align-items: center;
-  }
+   /* SEÇÃO AVALIAÇÃO */
+   .depoimento .cards {
+      flex-direction: column;
+      align-items: center;
+   }
 
    .depoimento h2 {
       margin-top: 80px;
    }
 
-  .depoimento aside {
-    width: 84%;
-    margin-bottom: 15px;
-  }
+   .depoimento aside {
+      width: 84%;
+      margin-bottom: 15px;
+   }
 
-  .pacote {
-   padding: 20px;
-   
-  }
-  .faq {
-    padding: 15px;
-  }
+   /* SEÇÃO PACOTE */
+   .pacote {
+      padding: 20px;
+      
+   }
 
-  .faq summary {
-    font-size: 1rem;
-  }
+   /* SEÇÃO PERGUNTAS FREQUENTES */
+   .faq {
+      padding: 15px;
+   }
 
+   .faq summary {
+      font-size: 1rem;
+   }
+
+   /* CALL TO ACTION */
    .chamada {
       flex-direction: column;
       gap: 30px;
       padding-top: 0px 10px 0px 10px;
    }
 
-  .chamada h2 {
-   padding-top: 40px;
-  }
-
-   .historia aside {
-      flex-direction: column-reverse;
-   }
-   .historia aside img {
-      max-width: 100%;
+   .chamada h2 {
+      padding-top: 40px;
    }
 
-  footer {
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+   /* RODAPÉ */
+   footer {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
 
-  footer nav {
-    margin-bottom: 15px;
-    flex-direction: column;
-  }
+   footer nav {
+      margin-bottom: 15px;
+      flex-direction: column;
+   }
 
-  footer .social-icons {
-    justify-content: center;
-    gap: 10px;
-  }
-
-  body {
-      overflow-x: hidden;
+   footer .social-icons {
+      justify-content: center;
+      gap: 10px;
    }
 }
 
+/* MENU HAMBUERGUER */
 .nav-list.active {
    transform: translateX(0);
 }
@@ -727,13 +688,17 @@ footer p:last-of-type {
    }
 }
 
+/* MENU HAMBUERGUER */
+
 .mobile-menu.active .line1 {
    transform: rotate(-45deg) translate(-8px, 8px);
 
 }
+
 .mobile-menu.active .line2 {
    opacity: 0;
 }
+
 .mobile-menu.active .line3 {
    transform: rotate(45deg) translate(-5px, -7px);
 }
