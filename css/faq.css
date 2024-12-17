@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.pacote h2 {
+   max-width: 100%;
+}
+
+@media (max-width: 850px) {
+   .pacote h2 {
+      max-width: 300px;
+      margin: auto;
+      margin-bottom: 20px;
+   }
+}

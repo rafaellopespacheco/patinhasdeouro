@@ -1,0 +1,17 @@
+.pacote h2 {
+   font-size: 2.3em;
+}
+
+.pacote h3 {
+   margin-top: 10px;
+   color: rgb(93, 93, 93);
+}
+
+.pacote li {
+   list-style: disc;
+   list-style-position: inside;
+}
+
+.pacote p {
+   text-indent: 30px;
+}
