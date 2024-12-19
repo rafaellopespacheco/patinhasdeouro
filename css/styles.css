@@ -13,8 +13,8 @@
   --cor3: #f5f5f5; /* Fundo neutro, áreas de texto */
 
   /* 🎉 Cores de Botões e Hovers */
-  --cor4: #1D3557; /* Botões de ação, hovers */
-  --cor5: #0a264d; /* Alternativa para botões e ações de destaque */
+  --cor4: rgb(160, 0, 0); /* #1D3557 Botões de ação, hovers */
+  --cor5: #4d0a0a; /* #0a264d Alternativa para botões e ações de destaque */
 
   /* 🖌️ Cor Complementar (Texto e Detalhes) */
   --cor6: #A4A4A4; /* Textos secundários, legendas */
@@ -77,8 +77,8 @@ main {
    width: 60%;
    padding: 15px;
    font-size: 1.3em;
-   background-color: rgb(255, 202, 96);
-   color: black;
+   background-color: rgb(0, 101, 5);
+   color: white;
    font-weight: bolder;
    display: flex;
    justify-content: space-around;
@@ -109,6 +109,7 @@ main {
 
 .container-not img {
    margin-right: 15px;
+   width: 50px;
 }
 
 /* CABEÇALHO */
