@@ -1,3 +1,1 @@
-Colocar textos alternativos nas páginas
-Organizar CSS e HTML, com comentários, ordens corretas etc
-Como organizar bem o seu css
+Adicionar sessão de Taxi Dog na tela inicial e uma pagina sobre o Taxi Dog
