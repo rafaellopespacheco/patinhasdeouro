@@ -261,12 +261,14 @@ header nav img {
    display: flex;
    margin-bottom: 80px;
    align-items: center;
+   gap: 20px;
 }
 
 .saude img {
    max-width: 500px;
    border-radius: 10px;
 }
+
 
 .saude h2 {
    margin-bottom: 20px;
