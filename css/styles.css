@@ -502,7 +502,7 @@ footer p:last-of-type {
 
 
 /* Responsividade */
-@media (max-width: 850px) {
+@media (max-width: 912px) {
    /* NOTIFICAÇÃO */
    .container-not {
       width: 90%;
