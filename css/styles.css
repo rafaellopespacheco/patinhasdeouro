@@ -206,6 +206,43 @@ header nav img {
    margin-left: 40px;
 }
 
+
+.aniversario .contador {
+   text-align: center;
+   padding: 20px;
+   border-radius: 20px;
+   background-color: var(--cor3);
+   backdrop-filter: blur(10px);
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+   margin-bottom: 80px;
+}
+
+.aniversario .contador h1 {
+   font-size: 2rem;
+   margin-bottom: 20px;
+}
+
+.aniversario .time {
+   display: flex;
+   justify-content: space-evenly;
+   gap: 20px;
+}
+
+.aniversario .time div {
+   text-align: center;
+}
+
+.aniversario .time div span {
+   display: block;
+   font-size: 2.5rem;
+   font-weight: bold;
+}
+
+.aniversario .time div p {
+   margin: 0;
+   font-size: 1rem;
+}
+
 /* SEÇÃO DE SERVIÇOS */
 .servicos {
    margin-bottom: 80px;
