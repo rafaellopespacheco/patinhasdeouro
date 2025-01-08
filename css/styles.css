@@ -137,6 +137,7 @@ header {
 .nav-list {
    list-style: none;
    display: flex;
+   z-index: 999;
 
    li {
       margin-left: 32px;
@@ -266,9 +267,10 @@ header {
       border-radius: 10px;
       margin: 10px;
       box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.151);
-      padding: 20px;
+   
       transition: 0.5s;
       max-width: 300px;
+      width: 100%;
 
       &:hover {
          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.391);
@@ -547,6 +549,7 @@ footer {
    }
 
    .nav-list {
+      box-sizing: border-box;
       position: absolute;
       top: 12.5vh;
       right: 0;
