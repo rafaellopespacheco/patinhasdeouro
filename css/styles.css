@@ -242,6 +242,36 @@ header {
    }
 }
 
+.novidade-ar-condicionado {
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 80px;
+   gap: 20px;
+
+   video {
+      max-width: 500px;
+      width: 100%;
+      border-radius: 10px;
+   }
+
+   h2 {
+      margin-bottom: 20px;
+      font-size: 2.1em;
+   }
+
+   p {
+      margin-bottom: 30px;
+      font-size: 1.1em;
+      max-width: 800px;
+   }
+
+   .conteudo {
+      padding-left: 30px;
+   }
+}
+
 /* SEÇÃO DE SERVIÇOS */
 .servicos {
    margin-bottom: 80px;
@@ -608,6 +638,10 @@ footer {
          max-width: 100%;
          height: auto;
       }
+   }
+
+   .novidade-ar-condicionado {
+      flex-direction: column-reverse;
    }
 
    .servicos2 {
