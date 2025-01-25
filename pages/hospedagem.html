@@ -7,6 +7,7 @@
    <title>Hospedagem</title>
    <link rel="stylesheet" href="../css/styles.css">
    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> <!-- AOS CSS -->
 </head>
 <body>
    <header>
@@ -36,7 +37,7 @@
       </nav>
    </header>
    <main>
-      <section class="principal"> <!-- Banner Principal -->
+      <section class="principal" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> <!-- Banner Principal -->
          <div class="conteudo">
             <h1>PATINHAS DE OURO</h1>
             <h2>Centro de Estética Animal</h2>
@@ -48,7 +49,7 @@
          </div>
       </section>
 
-            <section class="saude"> <!-- Cuidar do seu pet é saúde -->
+      <section class="saude" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> <!-- Cuidar do seu pet é saúde -->
 
          <div class="image">
             <img src="../assets/images/felizanonovo.png" alt="">
@@ -63,7 +64,7 @@
 
       </section>
       
-      <aside
+      <aside  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"
       style="
       padding: 50px;
       background-color: brown;
@@ -78,7 +79,7 @@
       </aside>
          
    
-      <section class="chamada"> <!-- Chamada Final (Call-to-Action) -->
+      <section class="chamada" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> <!-- Chamada Final (Call-to-Action) -->
          <div class="conteudo">
             <h2>Seu pet merece o melhor cuidado!</h2>
             <p>Agende o banho e tosa do seu pet agora e ofereça a ele saúde, conforto e bem-estar!</p>
@@ -90,7 +91,7 @@
 
    </main>
 
-   <footer>
+   <footer data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
       <nav>
          <a href="../index.html">Home</a>
          <a href="../pages/servicos.html">Serviços</a>
@@ -110,5 +111,9 @@
       <p>© 2024 Patinhas de Ouro. Todos os direitos reservados.</p>
    </footer>
    <script src="../js/mobile-navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> <!-- AOS JS -->
+   <script>
+      AOS.init(); // Inicializa o AOS
+   </script>
 </body>
 </html>

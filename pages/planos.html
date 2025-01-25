@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="../css/styles.css">
    <link rel="stylesheet" href="../css/planos.css">
    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> <!-- AOS CSS -->
 </head>
 <body>
    <header>
@@ -37,7 +38,7 @@
       </nav>
    </header>
    <main>
-      <section class="principal"> <!-- Banner Principal -->
+      <section class="principal"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> <!-- Banner Principal -->
          <div class="conteudo">
             <h1>PATINHAS DE OURO</h1>
             <h2>Centro de Estética Animal</h2>
@@ -49,7 +50,7 @@
          </div>
       </section>
 
-               <section class="saude"> <!-- Cuidar do seu pet é saúde -->
+      <section class="saude" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> <!-- Cuidar do seu pet é saúde -->
 
          <div class="image">
             <img src="../assets/images/felizanonovo.png" alt="">
@@ -68,7 +69,7 @@
       <section class="cards-plans">
          <h2>Pacotes</h2>
          <div class="conteudoplano">
-            <aside>
+            <aside data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0">
                <h3>Semanal</h3>
                <p>Este pacote é perfeito para quem deseja manter o seu pet limpo e cheiroso, e ainda mais, com este plano você recebe um desconto absurdo de <strong>28%</strong>, confira as vantagens:</p>
                <ul>
@@ -88,7 +89,7 @@
                   <a href="https://api.whatsapp.com/send/?phone=5522988442251&text=Ol%C3%A1,+estava%20no%20site%20e%20me%20interessei%20pelos%20planos,%20pode%20me%20falar%20mais%20sobre?" class="botao" target="_blank">SAIBA MAIS</a>
                </div>
             </aside>
-            <aside>
+            <aside  data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">
                <h3>Escovação de Dentes</h3>
                <p>Este pacote é perfeito para quem deseja manter a higiene bucal do seu pet, e ainda mais, com este plano você recebe um desconto absurdo de <strong>25%</strong>, confira as vantagens:</p>
                <ul>
@@ -108,14 +109,14 @@
                </div>
             </aside>
          </div>
-         <aside class="personalizados">
+         <aside class="personalizados"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
             <img src="../assets/images/logo.png" alt="">
             <p>Caso queira um plano mais personalizado, podemos conversar sobre, basta entrar em contato clicando em saiba mais.</p>
          </aside>
       </section>
          
    
-      <section class="chamada"> <!-- Chamada Final (Call-to-Action) -->
+      <section class="chamada" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> <!-- Chamada Final (Call-to-Action) -->
          <div class="conteudo">
             <h2>Seu pet merece o melhor cuidado!</h2>
             <p>Agende o banho e tosa do seu pet agora e ofereça a ele saúde, conforto e bem-estar!</p>
@@ -127,7 +128,7 @@
 
    </main>
 
-   <footer>
+   <footer data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
       <nav>
          <a href="../index.html">Home</a>
          <a href="../pages/servicos.html">Serviços</a>
@@ -147,5 +148,9 @@
       <p>© 2024 Patinhas de Ouro. Todos os direitos reservados.</p>
    </footer>
    <script src="../js/mobile-navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> <!-- AOS JS -->
+   <script>
+      AOS.init(); // Inicializa o AOS
+   </script>
 </body>
 </html>

@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="../css/styles.css">
    <link rel="stylesheet" href="../css/servicos.css">
    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> <!-- AOS CSS -->
 </head>
 <body>
    <header>
@@ -37,7 +38,7 @@
       </nav>
    </header>
    <main>
-      <section class="principal"> <!-- Banner Principal -->
+      <section class="principal" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> <!-- Banner Principal -->
          <div class="conteudo">
             <h1>PATINHAS DE OURO</h1>
             <h2>Centro de Estética Animal</h2>
@@ -47,8 +48,8 @@
          <div class="image">
             <img src="../assets/images/banho.jpg" alt="">
          </div>
-      </section>
-            <section class="saude"> <!-- Cuidar do seu pet é saúde -->
+      </section >
+            <section class="saude" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> <!-- Cuidar do seu pet é saúde -->
 
          <div class="image">
             <img src="../assets/images/felizanonovo.png" alt="">
@@ -65,35 +66,35 @@
       <section class="servicos"> <!-- Serviços -->
          <h2>Nossos Serviços</h2>
          <div class="servicos2">
-            <aside>
+            <aside data-aos="fade-right" data-aos-delay="0">
                <h3>Banho</h3>
                <p>Higienização completa do seu pet com produtos de qualidade. Incluso corte de unhas e limpeza de ouvido.</p>
             </aside>
-            <aside>
+            <aside data-aos="fade-right" data-aos-delay="0">
                <h3>Tosa Higiênica</h3>
                <p>Cuidados com a higiene das partes mais sensíveis do pet.</p>
             </aside>
-            <aside>
+            <aside data-aos="fade-right" data-aos-delay="0">
                <h3>Tosa Estética</h3>
                <p>Aparência impecável com cortes especiais para cada raça.</p>
             </aside>
-            <aside>
+            <aside data-aos="fade-right" data-aos-delay="0">
                <h3>Hidratação</h3>
                <p>Devolva o brilho e a maciez da pelagem do seu pet com um tratamento hidratante especial.</p>
             </aside>
-            <aside>
+            <aside data-aos="fade-right" data-aos-delay="0">
                <h3>Nutrição</h3>
                <p>Revitalize a pelagem opaca com nutrientes essenciais para um brilho saudável.</p>
             </aside>
-            <aside>
+            <aside data-aos="fade-right" data-aos-delay="0">
                <h3>Reconstrução</h3>
                <p>Restaure pelos danificados, trazendo força e vitalidade à pelagem.</p>
             </aside>
-            <aside>
+            <aside data-aos="fade-right" data-aos-delay="0">
                <h3>Hidratação</h3>
                <p>Devolva o brilho e a maciez da pelagem do seu pet com um tratamento hidratante especial.</p>
             </aside>
-            <aside>
+            <aside data-aos="fade-right" data-aos-delay="0">
                <h3>Escovação de Dentes</h3>
                <p>Higiene bucal completa para prevenir placas e mau hálito.</p>
             </aside>
@@ -101,7 +102,7 @@
          </div>
              
       </section>
-      <div class="conteudo-carrossel">
+      <div class="conteudo-carrossel"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
          <section class="carrossel-container">
            <div class="carrossel" id="carrossel">
                <img src="../assets/images/antes1.jpg" alt="Antes 1">
@@ -126,7 +127,7 @@
       </div>
          
    
-      <section class="chamada"> <!-- Chamada Final (Call-to-Action) -->
+      <section class="chamada"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> <!-- Chamada Final (Call-to-Action) -->
          <div class="conteudo">
             <h2>Seu pet merece o melhor cuidado!</h2>
             <p>Agende o banho e tosa do seu pet agora e ofereça a ele saúde, conforto e bem-estar!</p>
@@ -147,7 +148,7 @@
 
    </main>
 
-   <footer>
+   <footer  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
       <nav>
          <a href="../index.html">Home</a>
          <a href="../pages/servicos.html">Serviços</a>
@@ -168,5 +169,9 @@
    </footer>
    <script src="../js/mobile-navbar.js"></script>
    <script src="../js/carrossel.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> <!-- AOS JS -->
+   <script>
+      AOS.init(); // Inicializa o AOS
+   </script>
 </body>
 </html>
