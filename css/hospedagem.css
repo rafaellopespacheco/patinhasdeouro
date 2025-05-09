@@ -1,0 +1,62 @@
+.hospedagem {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  margin-top: 40px;
+}
+
+.hospedagem h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hospedagem h3 {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.hospedagem p, .hospedagem li, .hospedagem td, .hospedagem th {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.hospedagem ul, .hospedagem ol {
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.hospedagem table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.hospedagem table, .hospedagem th, .hospedagem td {
+  border: 1px solid #ccc;
+}
+
+.hospedagem th, .hospedagem td {
+  padding: 10px;
+  text-align: left;
+}
+
+.botao-reserva {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.botao-reserva:hover {
+  background-color: #005fa3;
+}
